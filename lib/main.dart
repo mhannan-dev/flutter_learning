@@ -22,17 +22,41 @@ class MyApp extends StatelessWidget {
       //       child: Text("This is my first app", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 25, color: Colors.redAccent),),
       //     )
       // ),
+      // home: SafeArea(
+      //   child: Scaffold(
+      //     body: Container(
+      //       height: 200,
+      //       width: 300,
+      //       decoration: BoxDecoration(color: Colors.deepOrange),
+      //       child: Text("I love Coding", style: TextStyle(fontSize: 30, color: Colors.black),),
+      //     ),
+      //   ),
+      // ),
       home: SafeArea(
         child: Scaffold(
-          body: Container(
-            height: 200,
-            width: 300,
-            decoration: BoxDecoration(color: Colors.deepOrange),
-            child: Text("I love Coding", style: TextStyle(fontSize: 30, color: Colors.black),),
+         appBar: AppBar(
+           title: Text("Column"),),
+          body: Column(
+            children: <Widget>[
+             Container(
+               height: 200,
+               width: 150,
+               color: Colors.deepOrange,
+             ), SizedBox(height: 10,),
+              Container(
+                height: 200,
+                width: 150,
+                color: Colors.deepOrange,
+              ),SizedBox(height: 10,),
+              Container(
+                height: 200,
+                width: 150,
+                color: Colors.deepOrangeAccent,
+              )
+            ],
           ),
         ),
       ),
-
     );
   }
 }
