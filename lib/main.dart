@@ -24,7 +24,12 @@ class MyApp extends StatelessWidget {
       // ),
       home: SafeArea(
         child: Scaffold(
-          backgroundColor: Colors.red,
+          body: Container(
+            height: 200,
+            width: 300,
+            decoration: BoxDecoration(color: Colors.deepOrange),
+            child: Text("I love Coding", style: TextStyle(fontSize: 30, color: Colors.black),),
+          ),
         ),
       ),
 
